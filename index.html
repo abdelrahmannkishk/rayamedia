@@ -131,48 +131,45 @@
     .input-field::placeholder {
             color: rgba(255, 255, 255, 0.7);
         }
+/* ==== تصميم الشريط المتحرك (النسخة النهائية والمضمونة) ==== */
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  background-color: #1e40af;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
 
-        /* ==== تصميم شريط اللوجو المتحرك ==== */
-        .ticker-wrap {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          overflow: hidden;
-          background-color: #111;
-          padding: 15px 0;
-          box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .ticker {
-          display: flex;
-          width: fit-content;
-          animation: ticker-animation 20s linear infinite;
-        }
-        .ticker-item {
-          display: flex;
-          align-items: center;
-          margin: 0 2rem;
-          white-space: nowrap;
-          color: #fff;
-          font-size: 1.2rem;
-          font-weight: bold;
-        }
-        .ticker-item img {
-          margin-right: 10px;
-        }
-        @keyframes ticker-animation {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .ticker-wrap:hover .ticker {
-          animation-play-state: paused;
-        }
-        /* ==== نهاية تصميم الشريط المتحرك ==== */
-        
+.ticker {
+  display: flex; /* نستخدم فليكس هنا */
+  animation: ticker-animation 45s linear infinite; /* يمكنك تغيير 40s لإبطاء أو تسريع الحركة */
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center; /* يضمن تناسق اللوجو والكتابة عموديًا */
+  flex-shrink: 0; /* يمنع العناصر من الانكماش */
+  padding: 0 2rem;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.ticker-item img {
+  height: 35px; /* ارتفاع اللوجو */
+  width: auto;
+  margin-right: 15px; /* مسافة بين الكتابة واللوجو */
+}
+
+@keyframes ticker-animation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-wrap:hover .ticker {
+  animation-play-state: paused;
+}
+/* ==== نهاية التصميم ==== */
     </style>
 </head>
 <body class="text-white">
@@ -348,45 +345,105 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-yellow-400">تواصل معنا</h2>
-                <p class="text-xl text-gray-200">نحن هنا لمساعدتك في تحقيق أهدافك</p>
+  </div>
             </div>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="contact-form p-8 rounded-2xl">
-                        <h3 class="text-2xl font-bold mb-6 text-yellow-400">أرسل لنا رسالة</h3>
-                        <form class="space-y-4">
-                            <input type="text" placeholder="الاسم" class="input-field w-full p-4 rounded-lg">
-                            <input type="email" placeholder="البريد الإلكتروني" class="input-field w-full p-4 rounded-lg">
-                            <textarea placeholder="الرسالة" rows="5" class="input-field w-full p-4 rounded-lg resize-none"></textarea>
-                            <button type="submit" class="btn-primary w-full py-4 rounded-lg">
-                                <i class="fas fa-paper-plane ml-2"></i>
-                                إرسال
-                            </button>
-                        </form>
-                    </div>
-                    
-                    <div class="contact-form p-8 rounded-2xl text-center">
-                        <h3 class="text-2xl font-bold mb-6 text-yellow-400">أو تواصل معنا مباشرة</h3>
-                        <div class="text-6xl text-yellow-400 mb-6">
-                            <i class="fab fa-whatsapp"></i>
+        </section> </div>
+            </div>
+        </section>  <div class="ticker-wrap">
+<div class="ticker-wrap">
+  <div class="ticker">
+    
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+ 
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>  
+
+     <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+    <div class="ticker-item">
+      <span>Raya Media</span><img src="logo-white.png" alt="Raya Media Logo">
+    </div>
+
+  </div>
+</div>
+          </div>
+        </div>
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-yellow-400">تواصل معنا</h2>
+                    <p class="text-xl text-gray-200">نحن هنا لمساعدتك في تحقيق أهدافك</p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="contact-form p-8 rounded-2xl">
+                            <h3 class="text-2xl font-bold mb-6 text-yellow-400">أرسل لنا رسالة</h3>
+                            <form class="space-y-4">
+                                <input type="text" placeholder="الاسم" class="input-field w-full p-4 rounded-lg">
+                                <input type="email" placeholder="البريد الإلكتروني" class="input-field w-full p-4 rounded-lg">
+                                <textarea placeholder="الرسالة" rows="5" class="input-field w-full p-4 rounded-lg resize-none"></textarea>
+                                <button type="submit" class="btn-primary w-full py-4 rounded-lg">
+                                    <i class="fas fa-paper-plane ml-2"></i>
+                                    إرسال
+                                </button>
+                            </form>
                         </div>
-                        <p class="text-xl mb-6">تحدث معنا عبر الواتساب</p>
-                        <a href="https://wa.me/201020593393" class="btn-primary inline-flex items-center px-8 py-4 rounded-full text-lg">
-                            <i class="fab fa-whatsapp ml-2"></i>
-                            راسلنا الآن
-                        </a>
+                        
+                        <div class="contact-form p-8 rounded-2xl text-center">
+                            <h3 class="text-2xl font-bold mb-6 text-yellow-400">أو تواصل معنا مباشرة</h3>
+                            <div class="text-6xl text-yellow-400 mb-6">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <p class="text-xl mb-6">تحدث معنا عبر الواتساب</p>
+                            <a href="https://wa.me/201020593393" class="btn-primary inline-flex items-center px-8 py-4 rounded-full text-lg">
+                                <i class="fab fa-whatsapp ml-2"></i>
+                                راسلنا الآن
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
- <footer class="bg-blue-900 py-8 border-t border-blue-800">
+        </section>
+
+        <footer class="bg-blue-900 py-8 border-t border-blue-800">
             <div class="container mx-auto px-4 text-center">
                 <div class="flex items-center justify-center mb-4">
                     <img src="logo.png" alt="رايا ميديا" class="h-8 w-auto ml-2">
@@ -411,37 +468,6 @@
             </div>
         </footer>
 
-        <div class="ticker-wrap">
-          <div class="ticker">
-            
-            <div class="ticker-item">
-              <img src="logo-white.png" alt="Raya Media Logo" height="30">
-              <span>Raya Media</span>
-            </div>
-            <div class="ticker-item">
-              <img src="logo-white.png" alt="Raya Media Logo" height="30">
-              <span>Raya Media</span>
-            </div>
-            <div class="ticker-item">
-              <img src="logo-white.png" alt="Raya Media Logo" height="30">
-              <span>Raya Media</span>
-            </div>
-
-            <div class="ticker-item">
-              <img src="logo-white.png" alt="Raya Media Logo" height="30">
-              <span>Raya Media</span>
-            </div>
-            <div class="ticker-item">
-              <img src="logo-white.png" alt="Raya Media Logo" height="30">
-              <span>Raya Media</span>
-            </div>
-            <div class="ticker-item">
-              <img src="logo-white.png" alt="Raya Media Logo" height="30">
-              <span>Raya Media</span>
-            </div>
-
-          </div>
-        </div>
         <script>
             // Smooth scrolling for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
