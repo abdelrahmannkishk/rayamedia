@@ -127,6 +127,52 @@
         .input-field::placeholder {
             color: rgba(255, 255, 255, 0.7);
         }
+    
+    .input-field::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* ==== تصميم شريط اللوجو المتحرك ==== */
+        .ticker-wrap {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          overflow: hidden;
+          background-color: #111;
+          padding: 15px 0;
+          box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .ticker {
+          display: flex;
+          width: fit-content;
+          animation: ticker-animation 20s linear infinite;
+        }
+        .ticker-item {
+          display: flex;
+          align-items: center;
+          margin: 0 2rem;
+          white-space: nowrap;
+          color: #fff;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+        .ticker-item img {
+          margin-right: 10px;
+        }
+        @keyframes ticker-animation {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .ticker-wrap:hover .ticker {
+          animation-play-state: paused;
+        }
+        /* ==== نهاية تصميم الشريط المتحرك ==== */
+        
     </style>
 </head>
 <body class="text-white">
@@ -340,7 +386,43 @@
             </div>
         </div>
     </section>
+     <footer class="bg-blue-900 py-8 border-t border-blue-800">
+            ... (محتوى الفوتر الخاص بك) ...
+        </footer>
 
+        <div class="ticker-wrap">
+          <div class="ticker">
+            
+            <div class="ticker-item">
+              <img src="logo-white.png" alt="Raya Media Logo" height="30"> <span>Raya Media</span>
+            </div>
+            <div class="ticker-item">
+              <img src="logo-white.png" alt="Raya Media Logo " height="30">
+              <span>Raya Media</span>
+            </div>
+            <div class="ticker-item">
+              <img src="logo-white.png" alt="Raya Media Logo" height="30">
+              <span>Raya Media</span>
+            </div>
+
+            <div class="ticker-item">
+              <img src="logo-white.png" alt="Raya Media Logo" height="30">
+              <span>Raya Media</span>
+            </div>
+            <div class="ticker-item">
+              <img src="logo-white.png" alt="Raya Media Logo" height="30">
+              <span>Raya Media</span>
+            </div>
+            <div class="ticker-item">
+              <img src="logo-white.png" alt="Raya Media Logo" height="30">
+              <span>Raya Media</span>
+            </div>
+
+          </div>
+        </div>
+       </script>
+    </body>
+</html>
     <!-- Footer -->
     <footer class="bg-blue-900 py-8 border-t border-blue-800">
         <div class="container mx-auto px-4 text-center">
